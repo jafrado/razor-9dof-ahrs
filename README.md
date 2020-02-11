@@ -1,6 +1,7 @@
 Razor AHRS v1.4.2
 ---
-** Purchase the latest on Ebay [worldchips freedom IMU](https://www.ebay.com/itm/9DOF-9axis-degree-of-freedom-IMU-sensor-ITG3200-ITG3205-ADXL345-HMC5883L-Module-/221545406750)
+
+**Purchase the latest on Ebay**  [Worldchips freedom IMU](https://www.ebay.com/itm/9DOF-9axis-degree-of-freedom-IMU-sensor-ITG3200-ITG3205-ADXL345-HMC5883L-Module-/221545406750)
 
 
 **9 Degree of Measurement Attitude and Heading Reference System** for Sparkfun *9DOF Razor IMU* (SEN-10125 and SEN-10736) and SparkFun *9DOF Sensor Stick* (SEN-10183, SEN-10321 and SEN-10724)
