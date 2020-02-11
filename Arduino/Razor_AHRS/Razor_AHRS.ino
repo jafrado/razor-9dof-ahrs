@@ -158,7 +158,7 @@
 /*****************************************************************/
 // Select your hardware here by uncommenting one line!
 //#define HW__VERSION_CODE 10125 // SparkFun "9DOF Razor IMU" version "SEN-10125" (HMC5843 magnetometer)
-//#define HW__VERSION_CODE 10736 // SparkFun "9DOF Razor IMU" version "SEN-10736" (HMC5883L magnetometer)
+#define HW__VERSION_CODE 10736 // SparkFun "9DOF Razor IMU" version "SEN-10736" (HMC5883L magnetometer)
 //#define HW__VERSION_CODE 10183 // SparkFun "9DOF Sensor Stick" version "SEN-10183" (HMC5843 magnetometer)
 //#define HW__VERSION_CODE 10321 // SparkFun "9DOF Sensor Stick" version "SEN-10321" (HMC5843 magnetometer)
 //#define HW__VERSION_CODE 10724 // SparkFun "9DOF Sensor Stick" version "SEN-10724" (HMC5883L magnetometer)
@@ -213,21 +213,21 @@ boolean output_errors = false;  // true or false
 // Put MIN/MAX and OFFSET readings for your board here!
 // Accelerometer
 // "accel x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
-#define ACCEL_X_MIN ((float) -250)
-#define ACCEL_X_MAX ((float) 250)
-#define ACCEL_Y_MIN ((float) -250)
-#define ACCEL_Y_MAX ((float) 250)
-#define ACCEL_Z_MIN ((float) -250)
-#define ACCEL_Z_MAX ((float) 250)
+#define ACCEL_X_MIN ((float) -277)
+#define ACCEL_X_MAX ((float) 256)
+#define ACCEL_Y_MIN ((float) -262)
+#define ACCEL_Y_MAX ((float) 268)
+#define ACCEL_Z_MIN ((float) -267)
+#define ACCEL_Z_MAX ((float) 242)
 
 // Magnetometer (standard calibration mode)
 // "magn x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
-#define MAGN_X_MIN ((float) -600)
-#define MAGN_X_MAX ((float) 600)
-#define MAGN_Y_MIN ((float) -600)
-#define MAGN_Y_MAX ((float) 600)
-#define MAGN_Z_MIN ((float) -600)
-#define MAGN_Z_MAX ((float) 600)
+#define MAGN_X_MIN ((float) -415)
+#define MAGN_X_MAX ((float) 715)
+#define MAGN_Y_MIN ((float) -440)
+#define MAGN_Y_MAX ((float) 734)
+#define MAGN_Z_MIN ((float) -441)
+#define MAGN_Z_MAX ((float) 559)
 
 // Magnetometer (extended calibration mode)
 // Uncommend to use extended magnetometer calibration (compensates hard & soft iron errors)
@@ -237,9 +237,9 @@ boolean output_errors = false;  // true or false
 
 // Gyroscope
 // "gyro x,y,z (current/average) = .../OFFSET_X  .../OFFSET_Y  .../OFFSET_Z
-#define GYRO_AVERAGE_OFFSET_X ((float) 0.0)
-#define GYRO_AVERAGE_OFFSET_Y ((float) 0.0)
-#define GYRO_AVERAGE_OFFSET_Z ((float) 0.0)
+#define GYRO_AVERAGE_OFFSET_X ((float) -47.00)
+#define GYRO_AVERAGE_OFFSET_Y ((float) -39.28)
+#define GYRO_AVERAGE_OFFSET_Z ((float) -9.87)
 
 /*
 // Calibration example:
@@ -281,6 +281,7 @@ const float magn_ellipsoid_transform[3][3] = {{0.902, -0.00354, 0.000636}, {-0.0
 /*****************************************************************/
 // When set to true, gyro drift correction will not be applied
 #define DEBUG__NO_DRIFT_CORRECTION false
+//#define DEBUG__NO_DRIFT_CORRECTION true
 // Print elapsed time after each I/O loop
 #define DEBUG__PRINT_LOOP_TIME false
 
